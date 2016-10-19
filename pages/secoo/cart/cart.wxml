@@ -1,0 +1,19 @@
+<view class="cart-container">
+	<view class="cartBag">
+		<image src="/images/cartBag.png"></image>
+		<text>您的购物袋空空如也~</text>
+	</view>
+	<view class="divider"></view>
+	<view class="guessLike">
+		<view class="guessFont">
+			<text>- 猜你喜欢 -</text>
+		</view>
+		<ul>
+			<li wx:for="{{guessLikeData}}">
+				<image src="http://pic11.secooimg.com/product/200/200/{{item.picUrl}}" mode = "scaleToFill"></image>
+				<text>{{item.name}}</text>
+				<b>￥{{item.secooPrice}}</b>
+			</li>
+		</ul>
+	</view>
+</view>

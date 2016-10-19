@@ -1,0 +1,32 @@
+<view class ="sortContainer">
+	<view class="search">
+		<view class="searchForm">
+			<text></text>
+        	<input placeholder="搜索：分类 品牌 系列 商品"/>
+		</view>
+	</view>
+	<view class="mainContent">
+		<scroll-view class="leftScroll" scroll-y="true">
+			<ul>
+				<li wx:for="{{leftScroll}}">
+					<text>{{item.name}}</text>
+				</li>
+			</ul>
+	  	</scroll-view>
+	  	<scroll-view class="rightScroll" scroll-y="true">
+			<ul class="logo">
+				<li wx:for="{{rightScroll}}">
+					<image src="{{item.img}}" mode = "scaleToFill"></image>
+				</li>
+			</ul>
+			<ul class="list">
+				<li>
+					
+				</li>
+			</ul>
+	  	</scroll-view>
+	  	<ul class="letterList">
+	  		<li wx:for="{{letterList}}">{{item}}</li>
+	  	</ul>
+	</view>
+</view>

@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/secoo/home/home",
+    "pages/secoo/cart/cart",
+    "pages/secoo/my/my",
+    "pages/secoo/login/login",
+    "pages/secoo/sort/sort",
+    "pages/secoo/products/products",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1A191E",
+    "navigationBarTitleText": "SECOO",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#a9b7b7",
+    "borderStyle":"white",
+    "selectedColor":"#fff",
+    "backgroundColor":"#000",
+    "list": [{
+      "pagePath": "pages/secoo/home/home",
+      "text": "首页",
+      "iconPath":"/images/tab_home.png",
+      "selectedIconPath":"images/tab_home_highlight.png"
+    }, {
+      "pagePath": "pages/secoo/products/products",
+      "text": "尖货",
+      "iconPath":"/images/tab_party.png",
+      "selectedIconPath":"/images/tab_party_highlight.png"
+    },{
+      "pagePath": "pages/secoo/sort/sort",
+      "text": "分类",
+      "iconPath":"/images/tab_category.png",
+      "selectedIconPath":"/images/tab_category_highlight.png"
+    },{
+      "pagePath": "pages/secoo/cart/cart",
+      "text": "购物袋",
+      "iconPath":"/images/tab_shoppingbag.png",
+      "selectedIconPath":"/images/tab_shoppingbag_highlight.png"
+    },{
+      "pagePath": "pages/secoo/my/my",
+      "text": "我的寺库",
+      "iconPath":"/images/tab_mine.png",
+      "selectedIconPath":"/images/tab_mine_highlight.png"
+    }]
+  }
+}

@@ -1,0 +1,89 @@
+.myContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 20px; }
+  .myContainer .close {
+    display: flex;
+    justify-content: flex-start;
+    height: 44px;
+    align-items: center;
+    margin-bottom: 26%; }
+    .myContainer .close image {
+      width: 20px;
+      height: 20px; }
+  .myContainer .phone {
+    display: flex;
+    height: 34px; }
+    .myContainer .phone .phoneTxt {
+      height: 100%;
+      width: 100%;
+      border-bottom: 1px solid #C1C1C1; }
+  .myContainer .password {
+    display: flex;
+    height: 34px;
+    margin-top: 20px; }
+    .myContainer .password .passwordTxt {
+      height: 100%;
+      width: 100%;
+      border-bottom: 1px solid #C1C1C1; }
+  .myContainer .register {
+    display: flex;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    margin: 14px 0; }
+    .myContainer .register button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background: #9A9A9A;
+      font-size: 12px;
+      color: #F7F7F7; }
+  .myContainer .gotoLogin {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between; }
+    .myContainer .gotoLogin view text {
+      color: #626262; }
+    .myContainer .gotoLogin view b {
+      color: #C2AB81; }
+  .myContainer .otherLogin {
+    display: flex;
+    justify-content: space-around;
+    height: 12px;
+    margin-top: 30%; }
+    .myContainer .otherLogin .leftLine {
+      width: 36%;
+      border-bottom: 1px solid #ECECEC; }
+    .myContainer .otherLogin b {
+      font-size: 10px;
+      padding-top: 2px;
+      color: #ECECEC; }
+    .myContainer .otherLogin .rightLine {
+      width: 36%;
+      border-bottom: 1px solid #ECECEC; }
+  .myContainer .loginLink {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    margin-top: 14%; }
+    .myContainer .loginLink li {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ECECEC;
+      border-radius: 50%;
+      padding: 4px; }
+      .myContainer .loginLink li image {
+        width: 14px;
+        height: 14px; }
+      .myContainer .loginLink li b {
+        font-size: 10px;
+        margin-top: 10px;
+        color: #626262; }

@@ -1,0 +1,32 @@
+<view class="myContainer">
+	<view class="close">
+		<image src="/images/close.png"></image>
+	</view>
+	<view class="phone">
+	  	<input class="phoneTxt" placeholder="手机号" placeholder-style ="color:red; font-size:10px; color:#EBEBEB"/>
+	</view>
+	<view class="register">
+	  	<button type="default"> 注册 </button>
+	</view>
+	<view class="gotoLogin">
+	  	<text>已有账号？</text><b bindtap="gotoLogin">请登录</b>
+	</view>
+
+	<view class="otherLogin">
+	  	<view class="leftLine"></view>
+	  	<b>合作账号登录</b>
+	  	<view class="rightLine"></view>
+	</view>
+
+	<ul class="loginLink">
+		<li class="weixin">
+			<image src="/images/weixin.png"></image>
+			<b>微信登录</b>
+		</li>
+		<li class="qq">
+			<image src="/images/qq.png"></image>
+			<b>QQ登录</b>
+		</li>
+	</ul>
+
+</view>

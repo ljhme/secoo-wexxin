@@ -1,0 +1,59 @@
+.cart-container {
+  display: flex;
+  flex-direction: column; }
+  .cart-container .cartBag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%; }
+    .cart-container .cartBag image {
+      width: 80px;
+      height: 80px; }
+    .cart-container .cartBag text {
+      font-size: 10px;
+      margin: 10% 0;
+      color: #AEAEAE; }
+  .cart-container .divider {
+    display: flex;
+    height: 6px;
+    background: #F5F5F5; }
+  .cart-container .guessLike {
+    display: flex;
+    height: 100%;
+    flex-direction: column; }
+    .cart-container .guessLike .guessFont {
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold; }
+    .cart-container .guessLike ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 6px 5px 6px 0; }
+      .cart-container .guessLike ul li {
+        box-sizing: border-box;
+        width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        justify-content: center; }
+        .cart-container .guessLike ul li image {
+          width: 100%;
+          height: 80px;
+          margin: 30px; }
+        .cart-container .guessLike ul li text {
+          font-size: 12px;
+          color: #868686;
+          padding: 0 10px;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .cart-container .guessLike ul li b {
+          font-size: 12px;
+          color: #868686;
+          padding: 10px; }

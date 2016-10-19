@@ -1,0 +1,56 @@
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  flex: 1; }
+  .productContainer scroll-view {
+    height: 840px;
+    overflow: hidden; }
+    .productContainer scroll-view .mianPro .mainView1 {
+      position: relative;
+      height: 220px; }
+      .productContainer scroll-view .mianPro .mainView1 image {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%; }
+      .productContainer scroll-view .mianPro .mainView1 view {
+        position: absolute;
+        top: 84%;
+        left: 78%;
+        display: flex; }
+        .productContainer scroll-view .mianPro .mainView1 view image {
+          width: 16px;
+          height: 14px; }
+        .productContainer scroll-view .mianPro .mainView1 view b {
+          color: #fff;
+          font-size: 12px;
+          padding-left: 8px; }
+    .productContainer scroll-view .mianPro .mainV1pro {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding: 20px 10px; }
+      .productContainer scroll-view .mianPro .mainV1pro li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .productContainer scroll-view .mianPro .mainV1pro li image {
+          width: 90px;
+          height: 90px; }
+        .productContainer scroll-view .mianPro .mainV1pro li view {
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
+          color: #0D0D0D;
+          justify-content: center;
+          align-items: center; }
+          .productContainer scroll-view .mianPro .mainV1pro li view text {
+            padding: 10px 0;
+            width: 90px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .productContainer scroll-view .mianPro .mainV1pro li view b {
+            color: #777; }

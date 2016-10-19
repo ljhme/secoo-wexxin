@@ -1,0 +1,152 @@
+<view class = "view-container">
+	<swiper class="swiper1" indicator-dots = "{{indicatorDots}}" autoplay = "{{autoplay}}" interval ="{{interval}}" duration = "{{duration}}">
+		<block wx:for = "{{homeData[0].banner}}">
+			<swiper-item class="swiperItem">
+				<image src = "{{item.img}}" class= "slide-image"/>
+				<text>{{item.title}}</text>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="nav">
+		<ul>
+			<navigator  wx:for = "{{homeData[2].access}}" url="{{item.url}}" hover-class="navigator-hover">
+				<li>
+					<image src="{{item.img}}"/>
+					<b>{{item.title}}</b>
+				</li>
+			</navigator>
+		</ul>
+	</view>
+	<view class="floor01">
+		<ul class="moreul1">
+			<li wx:for = "{{floor01}}">
+				<image src="{{item.img01}}"/>
+				<image src="{{item.img02}}"/>
+			</li>
+		</ul>
+		<ul class="moreul2">
+			<li><b>奢抢惠</b><text>00</text>:<text>46</text>:<text>42</text></li>
+			<li><b>更多</b>></li>
+		</ul>
+	</view>
+
+	<scroll-view class = "scrollView1" scroll-x = "true">
+		<view wx:for = "{{rush_rob_list}}">
+			<image src = "{{item.imageUrl}}" class= "slide-image" mode = "scaleToFill"/>
+			<view>
+				<text>{{item.brandCnName}}{{item.brandEnName}}</text>
+				<b>￥{{item.secooPrice}}</b>
+				<b>仅剩{{item.size}}件</b>
+			</view>
+		</view>
+	</scroll-view>
+	<view class = "floor2">
+		<ul>
+			<li wx:for = "{{floor3}}">
+				<image src="{{item.img}}"></image>
+				<view class="firb">
+					<b>
+						{{item.title}}
+					</b>
+				</view>
+			</li>
+		</ul>
+	</view>
+
+	<scroll-view class = "scrollView2" scroll-x = "true">
+		<view wx:for = "{{homeData[12].brand}}">
+			<image src = "{{item.img}}" class= "slide-image" mode = "scaleToFill"></image>
+		</view>
+	</scroll-view>
+	<view class = "floor2">
+		<ul>
+			<li wx:for = "{{floor4}}">
+				<image src="{{item.img}}"></image>
+				<view class="firb">
+					<b>
+						{{item.title}}
+					</b>
+				</view>
+			</li>
+		</ul>
+	</view>
+	<scroll-view class="necklaceScroll" scroll-x="true">
+		<view wx:for = "{{homeData[18].product}}">
+			<image src = "http://pic11.secooimg.com/product/200/200/{{item.picUrl}}" class= "slide-image" mode = "scaleToFill"/>
+			<view>
+				<text>{{item.brandNameEN}}</text>
+				<b>￥{{item.secooPrice}}</b>
+			</view>
+		</view>
+	</scroll-view>
+	<view class = "floor2">
+		<ul>
+			<li wx:for = "{{floor5}}">
+				<image src="{{item.img}}"></image>
+				<view class="firb">
+					<b>
+						{{item.title}}
+					</b>
+				</view>
+			</li>
+		</ul>
+	</view>
+	<scroll-view class="necklaceScroll" scroll-x="true">
+		<view wx:for = "{{homeData[24].product}}">
+			<image src = "http://pic11.secooimg.com/product/200/200/{{item.picUrl}}" class= "slide-image" mode = "scaleToFill"/>
+			<view>
+				<text>{{item.brandNameEN}}</text>
+				<b>￥{{item.secooPrice}}</b>
+			</view>
+		</view>
+	</scroll-view>
+	<view class = "floor2">
+		<ul>
+			<li wx:for = "{{floor6}}">
+				<image src="{{item.img}}"></image>
+				<view class="firb">
+					<b>
+						{{item.title}}
+					</b>
+				</view>
+			</li>
+		</ul>
+	</view>
+	<scroll-view class="necklaceScroll" scroll-x="true">
+		<view wx:for = "{{homeData[29].product}}">
+			<image src = "http://pic11.secooimg.com/product/200/200/{{item.picUrl}}" class= "slide-image" mode = "scaleToFill"/>
+			<view>
+				<text>{{item.brandNameEN}}</text>
+				<b>￥{{item.secooPrice}}</b>
+			</view>
+		</view>
+	</scroll-view>
+	<view class = "floor2">
+		<ul>
+			<li wx:for = "{{floor7}}">
+				<image src="{{item.img}}"></image>
+				<view class="firb">
+					<b>
+						{{item.title}}
+					</b>
+				</view>
+			</li>
+		</ul>
+	</view>
+	<view class="hotName">
+		<ul>
+			<li bindtap="newCustomer">{{homeData[37].hotName}}</li>
+			<li bindtap="maleName">{{homeData[37].maleName}}</li>
+			<li bindtap="femaleName">{{homeData[37].femaleName}}</li>
+		</ul>
+	</view>
+	<view class="hotNamePro">
+		<ul>
+			<li wx:for="{{hotNamePro}}">
+				<image src="http://pic11.secooimg.com/product/200/200/{{item.picUrl}}" mode = "scaleToFill"></image>
+				<text>{{item.name}}</text>
+				<b>￥{{item.secooPrice}}</b>
+			</li>
+		</ul>
+	</view>
+</view>

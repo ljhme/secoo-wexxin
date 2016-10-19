@@ -1,0 +1,70 @@
+Page({
+  data:{
+    leftScroll:[],
+    rightScroll:[],
+    letterList:[]
+  },
+  onLoad:function(){
+    var that = this;
+    wx.request({
+      url:'http://las.secoo.com/api/category/first_category',
+      header:{
+        'Content-Type':'application/json'
+      },
+      success:function(res){
+        //console.log(res.data.firstCategory);
+        //console.log(JSON.parse(res.data.floors[0].content));
+        that.setData({
+          leftScroll:res.data.firstCategory
+        })
+      },
+      fail:function(error){
+      console.log(error);
+      }
+    });
+    wx.request({
+      url:'http://las.secoo.com/api/category/all_hot_brands',
+      header:{
+        'Content-Type':'application/json'
+      },
+      success:function(res){
+        console.log(res.data);
+        //console.log(JSON.parse(res.data.floors[0].content));
+        that.setData({
+          rightScroll:res.data.hotBrands
+        })
+      },
+      fail:function(error){
+      console.log(error);
+      }
+    });
+    wx.request({
+      url:'http://localhost/mock/sort.json',
+      header:{
+        'Content-Type':'application/json'
+      },
+      success:function(res){
+        //console.log(res.data.letterList);
+        //console.log(JSON.parse(res.data.floors[0].content));
+        that.setData({
+          letterList:res.data.letterList
+        })
+      },
+      fail:function(error){
+      console.log(error);
+      }
+    });
+  },
+  onReady:function(){
+    // 页面渲染完成
+  },
+  onShow:function(){
+    // 页面显示
+  },
+  onHide:function(){
+    // 页面隐藏
+  },
+  onUnload:function(){
+    // 页面关闭
+  }
+})
